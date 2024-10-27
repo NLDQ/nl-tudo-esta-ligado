@@ -1,0 +1,432 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <title>"Tudo-está-ligado", de Pepetela</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
+    <!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
+
+    <!-- CSS Reset -->
+    <style type="text/css">
+/* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html,  body {
+	margin: 0 !important;
+	padding: 0 !important;
+	height: 100% !important;
+	width: 100% !important;
+}
+/* What it does: Stops email clients resizing small text. */
+* {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+/* What is does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+	margin: 0 !important;
+}
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,  td {
+	mso-table-lspace: 0pt !important;
+	mso-table-rspace: 0pt !important;
+}
+/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+	border-spacing: 0 !important;
+	border-collapse: collapse !important;
+	table-layout: fixed !important;
+	margin: 0 auto !important;
+}
+table table table {
+	table-layout: auto;
+}
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+	-ms-interpolation-mode: bicubic;
+}
+/* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+.yshortcuts a {
+	border-bottom: none !important;
+}
+/* What it does: Another work-around for iOS meddling in triggered links. */
+a[x-apple-data-detectors] {
+	color: inherit !important;
+}
+</style>
+
+    <!-- Progressive Enhancements -->
+    <style type="text/css">
+        h1{
+			color:#000000;
+			font-family:sans-serif;
+			font-size:2em;
+			font-style:italic;
+			font-weight:bold;
+			line-height:100%;
+			letter-spacing:normal;
+			text-align:center;
+		}
+		h2{
+			color:#000000;
+			font-family:sans-serif;
+			font-size:1.4em;
+			font-style:normal;
+			font-weight:normal;
+			line-height:100%;
+			letter-spacing:normal;
+			text-align:center;
+		}
+		h3{
+			color:#000000;
+			font-family:sans-serif;
+			font-size:1.4em;
+			font-style:normal;
+			font-weight:bold;
+			line-height:120%;
+			letter-spacing:normal;
+			text-align:center;
+		}
+		h4{
+			color:#000000;
+			font-family:sans-serif;
+			font-size:1.1em;
+			font-style:normal;
+			font-weight:bold;
+			line-height:120%;
+			letter-spacing:normal;
+			text-align:center;
+		}
+		h5{
+			color:#000000;
+			font-family:sans-serif;
+			font-size:14px;
+			font-style:normal;
+			font-weight:normal;
+			letter-spacing:normal;
+			text-align:center;
+		}
+		p{
+			color:#000000;
+			font-family:sans-serif;
+			font-size:1em;
+			font-style:normal;
+			font-weight:normal;
+			line-height:165%;
+			letter-spacing:normal;
+			text-align:left;
+		}
+        /* What it does: Hover styles for buttons */
+        .button-td,
+        .button-a {
+            transition: all 100ms ease-in;
+        }
+        .button-td:hover,
+        .button-a:hover {
+            background: #555555 !important;
+            border-color: #555555 !important;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 700px) {
+
+            .email-container {
+                width: 100% !important;
+            }
+
+            /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+            .fluid,
+            .fluid-centered {
+                max-width: 700 !important;
+                height: auto !important;
+                margin-left: auto!important;
+                margin-right: auto!important;
+            }
+            /* And center justify these ones. */
+            .fluid-centered {
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            /* What it does: Forces table cells into full-width rows. */
+            .stack-column,
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                max-width: 700 !important;
+                direction: ltr !important;
+            }
+            /* And center justify these ones. */
+            .stack-column-center {
+                text-align: center !important;
+            }
+        
+            /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+                
+        }
+
+    </style>
+    </head>
+    <body bgcolor="#FFFFFF" width="100%" style="margin: 0; padding:0" yahoo="yahoo">
+    <table bgcolor="FFFFFF" cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" style="border-collapse:collapse;">
+      <tr>
+        <td>
+            
+            <!-- Visually Hidden Preheader Text : BEGIN -->
+            <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;">"Tudo-está-ligado", de Pepetela</div>
+            <!-- Visually Hidden Preheader Text : END --> 
+            
+            <!-- Cabeçalho : COMEÇO, alterar imagem -->
+            <table align="center" width="100%" class="email-container">
+            <tr>
+                <td align="center" style="font-size: 0.6em; font-weight: normal; line-height: 1em; color: #000000; font-family: sans-serif; padding:10px 0px 0px 0px">Se não conseguir visualizar corretamente este e-mail <a href="https://nldq.github.io/nl-tudo-esta-ligado/">clique aqui</a></td>
+			</tr>
+			<tr>
+				<td style="padding: 0.4em 0em 0em 0em; text-align: center" class="full-width-image"><img src="https://onedrive.live.com/embed?resid=A5ECE9195A592475%21123445&authkey=%21AMxe9px-h8g3JY0&width=700&height=50" alt="Dom Quixote" border="0" align="center" width="700" style="width: 100%; max-width: 700px; height: auto;"></td>
+            </tr>
+			<tr>
+				<td style="padding: 0em 0em 0em 0em; text-align: center" class="full-width-image"><img src="https://1drv.ms/i/s!AnUkWVoZ6eylidkP1Bkyu7XrDPYHLA?embed=1&width=700&height=400" alt="&quot;Tudo-está-ligado&quot;, de Pepetela." border="0" width="700" align="center" style="width: 100%; max-width: 700px; height: auto;"></td>
+			</tr>
+          </table>
+            <!-- Cabeçalho : FIM --> 
+            
+            <!-- Email Body : BEGIN -->
+            <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="700" class="email-container">
+            
+<!-- Livro : COMEÇO-->
+            
+				<tr>
+				<td dir="ltr" align="center" valign="top" width="100%" style="padding: 0px;"><table align="center" border="0" cellpadding="0" cellspacing="0" width="90.5%">
+					<table align="center" width="100%">
+						<tbody>
+							<tr>
+							<td valign="top" align="center" style="padding:0px 60px 30px 60px;">
+								<h1 style="color:#a72c32">Tudo-Está-Ligado</h1>
+							<h2>Pepetela</h2>
+							<h4>Nas livrarias a 29 de Outubro</h4>
+								<br>
+								<h4 style="font-weight:normal"><strong>Seis anos depois de <em>Sua Excelência, de Corpo Presente</em> – Prémio Correntes d’ Escritas – Pepetela conduz o leitor numa viagem que vai desde a formação dos reinos no Planalto Central até à actualidade de Angola.</strong></h4>
+								<p style="text-align:left !important"><br><strong>Tudo na vida do major Santiago</strong> está prestes a mudar. Após um acidente traumático, que o obriga a reformar-se antes de tempo, sente necessidade de abandonar a capital e regressar à casa da sua infância, em Benguela. Ali, os seus dias são povoados por memórias e reflexões sobre a história da família – que remonta ao início do reino Tchiyaka –, o passado colonial de Angola e as profundas mudanças sociais que ocorreram. Mas a sua solidão termina quando aparece Jeremias e, meses depois, Zacarias, um cão e um gato fora do comum, que o irão acompanhar na nova fase da sua vida.<br>
+								<strong>Em Benguela</strong> vive também Ofeka, neta de uma adivinhadora e grande dona de feitiços. Quando era criança, a avó profetizou que o seu destino seria brilhar. Agora que é uma bela mulher com uma carreira de sucesso, a defunta avó envia-lhe um espírito para a ajudar a alcançar esse destino fantástico. E Ofeka nunca mais estará só, pois o impertinente kazumbi Olegário não se priva de comentar nem mesmo a sua vida amorosa.<br><br>
+								<strong>Quando Santiago e Ofeka</strong> se cruzam não imaginam até que ponto as suas vidas estão entrelaçadas, nem as inesperadas revelações que os aguardam. Na devida altura, terão de fazer uma escolha que irá mudar o seu destino e ensinar-lhes que tudo está ligado. Ou deve estar. E que o que deve ser só se liga pela palavra, dita, escrita ou transmitida.</p>
+								<p style="text-align:center"><br><strong><em>«Era uma vez uma criança, de nome Ofeka, a terra.
+									Uma grande dona de feitiços, adivinhadora do que vai
+									passar e conhecendo curas com ervas e encantamentos,
+									em muitos lugares chamada kimbanda, era sua avó, mãe
+									da mãe dela. Profetizou, vais ter mesmo um destino fantástico.<br>
+									Ofeka acreditou.<br>
+									A profecia foi feita quando olhavam o céu, à noite. Uma
+									estrela muito brilhante e cada vez maior parecia se aproximar
+									e cair em cima delas. Caiu perto, na anhara verde de capim
+									rasteiro ao lado do rio Cuporolo, onde cavou um buraco.
+									A pedra, grande e negra, estava bem lá no fundo. Afinal as
+									pessoas se enganavam, as estrelas são apenas grandes pedras
+									negras luzentes. A profecia da avó tinha dito, aquele risco
+									na noite é o teu destino, assim mesmo, a brilhar.<br>
+									Ofeka acreditou.<br>
+									Muito mais tarde descobriu, o seu destino era apenas uma
+									pedra negra parecendo estrela. Só mesmo isso?
+									Foi há muito tempo, antes mesmo da Grande Paz com a
+									qual ainda estamos, mas não sabemos até onde vai a eternidade
+									prometida.»</em></strong></p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			<hr width="91%" color="a72c32">
+			<br><br>
+<!-- Sobre o autor -->
+<table align="center" width="100%">
+	<tr>
+        <td width="100%" class="stack-column-center">
+            <table align="left" width="250" class="center-on-narrow">
+                <tbody>
+					<tr>
+                    	<td align="left" valign="top">
+							<img alt="Pepetela." src="https://1drv.ms/i/s!AnUkWVoZ6eylidkJs9gfzrxyFjKUJQ?embed=1&width=280&height=420" width="250">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+            <table align="right" width="400" class="center-on-narrow">
+                <tbody>
+					<tr>
+                    	<td valign="top" style="padding: 0px 20px 0px 0px">
+                        	<p><strong>Pepetela</strong> (Artur Carlos Maurício Pestana dos Santos) nasceu em Benguela, Angola, em 1941.<br>
+							Licenciou-se em Sociologia, em Argel, durante o exílio.<br>
+							Foi guerrilheiro do MPLA, político e governante.<br>
+							Foi ainda professor na Universidade Agostinho Neto, em Luanda, e tem sido dirigente de associações culturais, com destaque para a União de Escritores Angolanos e a Associação Cultural Recreativa Chá de Caxinde.<br>
+							A atribuição do Prémio Camões (1997) confirmou o seu lugar de destaque na literatura lusófona.
+							</p>
+						</td>
+					</tr>
+            	</tbody>
+			</table>
+        </td>
+    </tr>
+</table>
+<br>
+<hr width="91%" color="a72c32">
+<br>
+<!-- Outros livros da autora-->
+<table align="center" width="80%">
+	<h3 style="color:#a72c32">Outros livros do autor</h3>
+	<tr>
+        <td align="center" width="100%" class="stack-column-center">
+            <table align="left" width="135" class="center-on-narrow">
+                <tbody>
+					<tr>
+                    	<td align="left" valign="top">
+							<img alt="A Geração da Utopia" src="https://1drv.ms/i/s!AnUkWVoZ6eylidkIv5f6DlK3HGDBXA?embed=1&width=140&height=210" width="130">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+            <table align="left" width="135" class="center-on-narrow">
+                <tbody>
+					<tr>
+                    	<td align="left" valign="top">
+							<img alt="A Gloriosa Família" src="https://1drv.ms/i/s!AnUkWVoZ6eylidkHsMLv-6U77-BybA?embed=1&width=140&height=210" width="130">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+            <table align="left" width="135" class="center-on-narrow">
+                <tbody>
+					<tr>
+                    	<td align="left" valign="top">
+							<img alt="Predadores" src="https://1drv.ms/i/s!AnUkWVoZ6eylidkLPYkDpTmU_ZbzKw?embed=1&width=140&height=210" width="130">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<table align="left" width="135" class="center-on-narrow">
+                <tbody>
+					<tr>
+                    	<td align="left" valign="top">
+							<img alt="O Terrorista de Berkeley, Califórnia" src="https://1drv.ms/i/s!AnUkWVoZ6eylidkN6bslexpCh2D8LQ?embed=1&width=140&height=210" width="130">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+        </td>
+    </tr>
+</table>
+<table align="center" width="80%">
+	<tr>
+        <td align="center" width="100%" class="stack-column-center">
+            <table align="left" width="135" class="center-on-narrow">
+                <tbody>
+					<tr>
+                    	<td align="left" valign="top">
+							<img alt="O Quase Fim do Mundo" src="https://1drv.ms/i/s!AnUkWVoZ6eylidkK_4alkvVTq-8WKA?embed=1&width=140&height=210" width="130">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+            <table align="left" width="135" class="center-on-narrow">
+                <tbody>
+					<tr>
+                    	<td align="left" valign="top">
+							<img alt="O Planalto e a Estepe" src="https://1drv.ms/i/s!AnUkWVoZ6eylidkMV5vN_vaimPorrw?embed=1&width=140&height=210" width="130">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+            <table align="left" width="135" class="center-on-narrow">
+                <tbody>
+					<tr>
+                    	<td align="left" valign="top">
+							<img alt="Se o Passado não Tivesse Asas" src="https://1drv.ms/i/s!AnUkWVoZ6eylidkGG4L-J2_yG6MWKg?embed=1&width=140&height=210" width="130">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<table align="left" width="135" class="center-on-narrow">
+                <tbody>
+					<tr>
+                    	<td align="left" valign="top">
+							<img alt="Sua Excelência, de Corpo Presente" src="https://1drv.ms/i/s!AnUkWVoZ6eylidkOmibOb6a1sVZYFg?embed=1&width=140&height=210" width="130">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+        </td>
+    </tr>
+</table>
+<br>
+<hr width="91%" color="a72c32">
+<br>
+<!-- Capa e especificações -->
+<table align="center" width="100%">
+	<tr>
+        <td width="100%" class="stack-column-center">
+            <table align="left" width="250" class="center-on-narrow">
+                <tbody>
+					<tr>
+                    	<td align="left" valign="top">
+							<img alt="&quot;Tudo-está-ligado&quot;, de Pepetela." src="https://1drv.ms/i/s!AnUkWVoZ6eylibEkaCuWQxhH0V6fvw?embed=1&width=1042&height=1564" width="250">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+            <table align="right" width="400" class="center-on-narrow">
+                <tbody>
+					<tr>
+                    	<td valign="top" style="padding: 0px 20px 0px 0px">
+                        	<p style="line-height: 250%">
+							Literatura Lusófona<br>
+							416 páginas<br>
+							21,10 Euros<br>
+							ISBN: 978-972-20-8374-4<br>
+							1.ª Edição: Outubro 2024<br>
+							Dom Quixote
+							</p>
+						</td>
+					</tr>
+            	</tbody>
+			</table>
+        </td>
+    </tr>
+</table>
+					<table align="center" width="100%">
+	<tbody>
+		<tr>
+			<td valign="top" align="center" style="padding: 10px">
+				<p style="text-align: center; line-height: 150%">Para mais informações:<br>
+				Rui Breda<br>
+				938 527 410<br></p>
+			</td>
+		</tr>
+		<tr>
+				<td style="padding: 0.4em 0em 0em 0em; text-align: center" class="full-width-image"><img src="https://onedrive.live.com/embed?resid=A5ECE9195A592475%21123446&authkey=%21AF8CaGSbZcojQpU&width=700&height=125" alt="Dom Quixote" border="0" align="center" width="700" style="width: 100%; max-width: 700px; height: auto;"></td>
+            </tr>
+	</tbody>
+					</table>
+                  </table></td>
+              </tr>
+          </table>
+            <!-- Email Body : END --> 
+            
+            <!-- Email Footer : BEGIN -->
+            
+            <!-- Email Footer : END -->
+            
+			</td></tr></table>
+</body>
+</html>
